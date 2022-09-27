@@ -57,11 +57,11 @@ length(geno_only)
 # Check correlations of all relevant pheno variables
 rel_lipfile <- lipfile[-c(1, 3, 6, 14, 15, 19)]
 
-# Big graph so try pdf
-pdf("../img/pheno_correlation.pdf")
-# And split in 2
-pairs(rel_lipfile[1:6], cex=0.5)
-pairs(rel_lipfile[7:13], cex=0.5)
+# Save as high resolution jpeg
+jpeg(file="pheno_correlations.jpeg", width = 10, height = 10, units = 'in', res = 500)
+
+pairs(rel_lipfile, lower.panel = NULL, cex = 0.5)
+
 dev.off()
 
 
