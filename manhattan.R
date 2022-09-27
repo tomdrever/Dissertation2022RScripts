@@ -1,8 +1,9 @@
-
 library(qqman)
 library(magrittr)
 library(dplyr)
 library(wesanderson)
+
+# ---- SETUP ----
 
 setwd("C:/Users/tomdr/Google Drive/School/Aber/Masters/Dissertation/")
 
